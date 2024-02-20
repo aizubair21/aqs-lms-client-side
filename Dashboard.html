@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LMS - Components</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+
+    <!-- bootstrap   -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+
+<body>
+
+    <div id="top_header">
+        <div class="container-fluid">
+            <div class="row justify-content-between align-items-center m-0">
+                <div class="col-4 col-lg-3">
+                    <div class="logo">STUDYSYNC</div>
+                </div>
+                <div class="d-none d-lg-flex col-lg-5  middle">
+                    <a href="" class="nav_link d-block text-center">Home</a>
+
+                    <a href="" class="nav_link d-block text-center">Home</a>
+
+                    <a href="" class="nav_link d-block text-center">Home</a>
+
+                    <a href="" class="nav_link d-block text-center">Home</a>
+                </div>
+                <div class="col-5 col-lg-4 right">
+                    <a href="" class="nav-link">Cart</a>
+                    <img src="assets/img.png" onclick="toggleProfileDiv()" class="top_header_img" alt="">
+
+                    <div class="top_header_profile">
+                        <div>
+                            <a href="">
+                                <div class="fa-solid fa-pencil pe-2"></div>
+                                <div>
+                                    Profile
+
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="">
+                                <div class="fa-solid fa-lock pe-2"></div>
+                                <div>
+                                    Password Change
+
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="" class="bg_light mt-3 ">
+                                <div class="fa-solid fa-sign-out pe-2"></div>
+                                <div>
+                                    Log Out
+
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- main content  -->
+
+    <div class="container-fluid" id="student_menu">
+
+        <div class="row m-0 justify-content-between">
+
+            <div class="col-lg-3 ">
+                <div class="menu_item bg-light" id="std_menu_mob">
+
+                    <div class=" text-end">
+
+                        <button class="d-lg-none btn border-danger text-dark asside_collaps-btn float-right">
+                            <i class="fa-solid fa-close text-danger border-danger rounded"></i>
+                        </button>
+                    </div>
+
+                    <!-- student short profile start-->
+                    <div class="std_menu_profile">
+                        <img src="assets/abc.png" alt="" class="std_menu_img">
+                        <h4>John Doe</h4>
+                        <h6>
+                            <strong>E-Mail : </strong> john@gmail.com
+                        </h6>
+                    </div>
+                    <!-- student short profile end -->
+
+                    <!-- menu item start  -->
+                    <div class="flex-column std_menu_list">
+                        <div class="nav_item ">
+                            <a class="nav_link active" aria-current="page" href="#">
+                                <div class="d-flex align-items-center">
+                                    <i class="fa-solid fa-home icon"></i>
+                                    My Courses
+                                </div>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                            <a class="nav_link " aria-current="page" href="#">
+                                <div class="d-flex align-items-center">
+                                    <i class="fa-solid fa-history icon"></i>
+                                    <!-- My Courses -->
+                                    Purchase History
+                                </div>
+                                <i class="fa-solid fa-arrow-right"></i>
+                                <!-- <img src="assets/img.png" class="icon" alt=""> -->
+                            </a>
+                            <a class="nav_link " aria-current="page" href="#">
+                                <div class="d-flex align-items-center">
+
+                                    <i class="fa-solid fa-shopping-bag icon"></i>
+                                    <!-- My Courses -->
+                                    Courses Bundles
+                                </div>
+                                <i class="fa-solid fa-arrow-right"></i>
+                                <!-- <img src="assets/img.png" class="icon" alt=""> -->
+                            </a>
+                            <a class="nav_link " aria-current="page" href="#">
+                                <div class="d-flex align-items-center">
+
+                                    <i class="fa-solid fa-gear icon"></i>
+
+                                    Profile
+                                </div>
+                                <i class="fa-solid fa-arrow-right"></i>
+                                <!-- <img src="assets/img.png" class="icon" alt=""> -->
+                            </a>
+                            <!-- <a class="nav_link " aria-current="page" href="#">
+                                <img src="assets/img.png" class="icon" alt="">
+                                Quize
+                            </a>
+                            <a class="nav_link " aria-current="page" href="#">
+                                <img src="assets/img.png" class="icon" alt="">
+                                Wishlist
+                            </a>
+                            <a class="nav_link " aria-current="page" href="#">
+                                <img src="assets/img.png" class="icon" alt="">
+                                Message
+                            </a>
+                            <a class="nav_link " aria-current="page" href="#">
+                                <img src="assets/img.png" class="icon" alt="">
+                                Instructor
+                            </a>
+                            <a class="nav_link bg_light " aria-current="page" href="#">
+                                <img src="assets/img.png" class="icon" alt="">
+                                Log Out
+                            </a> -->
+                        </div>
+                    </div>
+                    <!-- menu item end -->
+
+                </div>
+
+            </div>
+
+            <div class=" col-lg-9 p-0 ">
+
+                <div class="menu_content">
+
+                    <!-- content breadcrumbs -->
+                    <div class="breadcrumbs  mb-2 p-2">
+                        <div class="px-2 d-flex  justify-content-between align-items-center">
+                            <!-- <img src="assets/icons8-align-right.png " class="asside_collaps-btn d-lg-none"> -->
+                            <div class="asside_collaps-btn d-lg-none">
+                                <i class="fa-solid fa-align-justify text_dark "></i>
+                            </div>
+                            <div class="d-flex ms-3">
+                                <a href="" class="nav-link p-2 me-1">Home</a>
+                                <a href="" class="nav-link p-2 me-1">Courses </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="courses">
+
+                        <!-- running -->
+                        <div class="bg-light course border_hover lms_shadow shadow_hover">
+                            <div class="">
+                                <img src="assets/c1.jpg" class="course_thumb" alt="">
+                            </div>
+                            <div class="p-3">
+                                <a class="cursor_pointer  h4 d-block font-bangla course_title m-0 mb-2">
+                                    এসো কোরআন শিখি - নাজেরা কোর্স
+                                </a>
+
+                                <div class="course_info">
+                                    <div class="info_box">
+                                        <img src="assets/img.png" class="icon" alt="">
+                                        <span class="px-1">Lecture</span>
+                                        <span>22</sp>
+                                    </div>
+                                    <div class="info_box">
+                                        <img src="assets/img.png" class="icon" alt="">
+                                        <span class="px-1">Quiz</span>
+                                        <span>22</sp>
+                                    </div>
+                                    <div class="info_box">
+                                        <img src="assets/img.png" class="icon" alt="">
+                                        <span class="px-1">Duration</span>
+                                        <span>22</sp>
+                                    </div>
+
+                                </div>
+                                <div class="px-2 py-3 border-start text-dark bg_light mt-2 border-start">
+                                    You have finished: 8 out of 22 Lectures<br />
+                                    Quiz will be available after completing all the lectures.
+                                </div>
+                                <div class="course_progress ">
+                                    <div class="progres">
+                                        <div class="progres_bar"></div>
+                                    </div>
+                                    <div class="progres_count">32%</div>
+                                </div>
+                            </div>
+                            <div class="p-3 course_footer">
+                                <div class="course_ins">
+                                    <div class="d-block d-lg-flex justify-content-between align-items-cneter py-1">
+                                        <img src="assets/abc.png" class="ins_img" alt="">
+
+                                    </div>
+
+                                </div>
+                                <a href="" class="start-btn btn btn-lg btn-primary border-0">
+                                    Start Course
+                                    <div class="fa-solid fa-angle-double-right"></div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- not started yet -->
+                        <div class="bg-light course border_hover lms_shadow shadow_hover">
+                            <div class="">
+                                <img src="assets/c2.jpg" class="course_thumb" alt="">
+                            </div>
+                            <div class="p-3">
+                                <a class="cursor_pointer h4 d-block font-bangla course_title m-0 mb-2">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, itaque?
+                                </a>
+
+                                <div class="course_info">
+                                    <div class="info_box">
+                                        <img src="assets/img.png" class="icon" alt="">
+                                        <span class="px-1">Lecture</span>
+                                        <span>22</sp>
+                                    </div>
+                                    <div class="info_box">
+                                        <img src="assets/img.png" class="icon" alt="">
+                                        <span class="px-1">Quiz</span>
+                                        <span>22</sp>
+                                    </div>
+                                    <div class="info_box">
+                                        <img src="assets/img.png" class="icon" alt="">
+                                        <span class="px-1">Duration</span>
+                                        <span>22</sp>
+                                    </div>
+
+                                </div>
+                                <div class="px-2 py-3 border-start text-dark bg_light">
+                                    Enrolled at : 01 janu, 2024.
+                                    But, Won't started the course.
+                                </div>
+                                <div class="course_progress d-none">
+                                    <div class="progres">
+                                        <div class="progres_bar"></div>
+                                    </div>
+                                    <div class="progres_count">32%</div>
+                                </div>
+
+                                <hr>
+                                <div class="course_footer">
+                                    <div class="course_ins">
+                                        <div class="d-block d-lg-flex  justify-content-between align-items-cneter py-1">
+                                            <img src="assets/abc.png" class="ins_img" alt="">
+                                            <h5>Lorem, ipsum.</h5>
+                                        </div>
+                                        <div class="course_validity">
+                                            <strong>Lifetime Access</strong>
+                                        </div>
+                                    </div>
+                                    <a href="" class="start-btn btn btn-lg btn-primary border-0">
+                                        Start Course</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- finished -->
+                        <div class="bg-light course border_hover lms_shadow shadow_hover">
+                            <div class="">
+                                <img src="assets/c1.jpg" class="course_thumb" alt="">
+                            </div>
+                            <div class="p-3">
+                                <a class="cursor_pointer h4 d-block font-bangla course_title m-0 mb-2">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, itaque?
+                                </a>
+
+                                <div class="course_info">
+                                    <div class="info_box">
+                                        <img src="assets/img.png" class="icon" alt="">
+                                        <span class="px-1">Lecture</span>
+                                        <span>22</sp>
+                                    </div>
+                                    <div class="info_box">
+                                        <img src="assets/img.png" class="icon" alt="">
+                                        <span class="px-1">Quiz</span>
+                                        <span>22</sp>
+                                    </div>
+                                    <div class="info_box">
+                                        <img src="assets/img.png" class="icon" alt="">
+                                        <span class="px-1">Duration</span>
+                                        <span>22</sp>
+                                    </div>
+
+                                </div>
+                                <div class="alert alert-success bg_dark">
+                                    <div class="">
+                                        <span>
+                                            Enrolled at : 01 janu, 2024.
+                                        </span>
+                                        <strong>
+                                            Finished at : 25 jun, 2024
+                                        </strong>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="course_footer">
+                                    <div class="course_ins">
+                                        <div class="d-flex justify-content-between align-items-cneter py-1">
+                                            <img src="assets/abc.png" class="ins_img" alt="">
+                                            <h5>Lorem, ipsum.</h5>
+                                        </div>
+                                        <div class="course_validity">
+                                            <strong>Lifetime Access</strong>
+                                        </div>
+                                    </div>
+                                    <a href="" class="start-btn btn btn-lg btn-primary border-0">
+                                        Review</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-light course border_hover lms_shadow shadow_hover">
+                            <div class="">
+                                <img src="assets/c1.jpg" class="course_thumb" alt="">
+                            </div>
+                            <div class="p-3">
+                                <a class="cursor_pointer h4 d-block font-bangla course_title m-0 mb-2">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, itaque?
+                                </a>
+
+                                <div class="course_info">
+                                    <div class="info_box">
+                                        <img src="assets/img.png" class="icon" alt="">
+                                        <span class="px-1">Lecture</span>
+                                        <span>22</sp>
+                                    </div>
+                                    <div class="info_box">
+                                        <img src="assets/img.png" class="icon" alt="">
+                                        <span class="px-1">Quiz</span>
+                                        <span>22</sp>
+                                    </div>
+                                    <div class="info_box">
+                                        <img src="assets/img.png" class="icon" alt="">
+                                        <span class="px-1">Duration</span>
+                                        <span>22</sp>
+                                    </div>
+
+                                </div>
+                                <div class="course_progress ">
+                                    <div class="progres">
+                                        <div class="progres_bar"></div>
+                                    </div>
+                                    <div class="progres_count">32%</div>
+                                </div>
+                                <hr>
+                                <div class="course_footer">
+                                    <div class="course_ins">
+                                        <div class="d-flex justify-content-between align-items-cneter py-1">
+                                            <img src="assets/abc.png" class="ins_img" alt="">
+                                            <h5>Lorem, ipsum.</h5>
+                                        </div>
+                                        <div class="course_validity">
+                                            Validity : <strong>Lifetime Access</strong>
+                                        </div>
+                                    </div>
+                                    <a href="" class="start-btn btn btn-lg  btn-primary">Start Co
+                                        urse</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- bootstrap  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+
+    <script>
+        let menuCollapsBtn = document.querySelectorAll(".asside_collaps-btn");
+        let menuMob = document.getElementById('std_menu_mob');
+        menuCollapsBtn.forEach(btn => {
+
+            btn.addEventListener("click", () => {
+                if (menuMob.classList.contains("active_mob")) {
+                    menuMob.classList.remove("active_mob");
+                } else {
+                    menuMob.classList.add("active_mob");
+                }
+            })
+        })
+
+
+        function toggleProfileDiv() {
+            let windowWidth = window.innerWidth;
+
+            let profileBtn = document.getElementsByClassName("top_header_img")[0];
+            let profileDiv = document.getElementsByClassName('top_header_profile')[0];
+
+
+            if (profileDiv.classList.contains('top_header_profile_active')) {
+                profileDiv.classList.remove("top_header_profile_active");
+            } else {
+                profileDiv.classList.add('top_header_profile_active');
+            }
+
+
+            // if (windowWidth < "991") {
+            //     if (menuMob.classList.contains('top_header_profile_active')) {
+            //         menuMob.classList.remove('top_header_profile_active');
+            //     } else {
+            //         menuMob.classList.add("top_header_profile_active");
+            //     }
+            // } else {
+
+
+            // }
+        }
+    </script>
+</body>
+
+</html>
