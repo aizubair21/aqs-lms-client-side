@@ -416,7 +416,15 @@ body,
   transition: all linear 0.3s;
 }
 #student_menu .menu_item {
+  overflow: hidden;
+  overflow-y: scroll;
   height: 100vh;
+}
+#student_menu .menu_item::-webkit-scrollbar {
+  display: none;
+}
+#student_menu .menu_item .std_menu_list {
+  text-align: center;
 }
 #student_menu .menu_item .std_menu_list .nav_item .nav_link {
   display: flex;
@@ -428,6 +436,7 @@ body,
   height: 20px;
   margin-right: 15px;
   cursor: pointer;
+  color: var(--lms-secondary);
 }
 #student_menu .menu_item .std_menu_list .nav_item .nav_link:hover:not(.active) {
   background-color: var(--lms-light);
@@ -436,6 +445,32 @@ body,
 #student_menu .menu_item .std_menu_list .nav_item .active {
   background-color: var(--lms-primary);
   color: white;
+}
+#student_menu .menu_item .std_menu_list .nav_item .active .icon {
+  color: var(--lms-white);
+}
+#student_menu .menu_item .std_menu_list .special_access {
+  margin: 0 auto;
+  padding: 4px 20px;
+  background-color: var(--lms-gray);
+  color: var(--lms-black);
+  border-radius: 25px;
+  text-align: center;
+  display: inline-block;
+  margin: 5px 0px;
+  position: relative;
+  font-size: 12px;
+}
+#student_menu .menu_item .std_menu_list .special_access::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 250px;
+  height: 0.5px;
+  transform: translate(-50%, -50%);
+  background-color: var(--lms-gray);
+  z-index: -1;
 }
 #student_menu .menu_content .breadcrumbs {
   display: flex;
@@ -593,6 +628,11 @@ body,
   box-shadow: 0px 15px 25px #00000020;
   transition: ease-in 0.3s;
 }
+#learning_page {
+  max-width: 1400px;
+  margin: auto;
+  position: relative;
+}
 #learning_page .left #video_playground iframe,
 #learning_page .left video,
 #learning_page .left #video {
@@ -658,6 +698,19 @@ body,
   height: 50px!important;
   transition: ease-in 0.3s;
   overflow: hidden;
+}
+#learning_page .content_btn {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 999;
+  width: 65px;
+  height: 65px;
+  background-color: var(--lms-dark);
+  color: white;
+}
+#learning_page .active {
+  left: 0px!important;
 }
 #lms_home .banner {
   position: relative;
@@ -786,15 +839,15 @@ body,
   background-image: url("assets/pexels-photo-16150241-scaled.jpeg");
   background-position: center;
   background-size: cover;
-  background-blend-mode: soft-light;
 }
 #login .login-form {
   border-top: 10px solid var(--lms-secondary);
   max-width: 400px;
   border-radius: 12px!important;
   box-shadow: 0px 15px 25px #00000020;
-  background: white;
   overflow: hidden;
+  backdrop-filter: blur(25px);
+  color: var(--lms-font-color-with-primary);
 }
 #footer {
   position: relative;

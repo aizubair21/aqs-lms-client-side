@@ -38,32 +38,45 @@
         <div class="login-form row">
             <div class="w-100 h1 text-center px-3 py-2 fw-bold border-bottom text_secondary">Login Form</div>
             <form action="Dashboard.html" class="py-3">
+
+                <label for="email" class="form-label"> Email :</label>
                 <div class="input-group mb-3">
-                    <label for="username" class="input-group-text bg-light"> <i class="fa-solid fa-user"></i> </label>
-                    <input type="text" name="" id="" class="form-control " placeholder="User Name ">
+                    <label class="input-group-text bg-light "> <i class="fa-solid fa-envelope"></i> </label>
+                    <input type="email" name="" id="email" class="form-control " placeholder="User Name ">
                 </div>
 
+                <label for="password" class="form-label"> Password :</label>
                 <div class="input-group mb-3">
                     <label for="password" class="input-group-text"> <i class="fa-solid fa-lock"></i> </label>
                     <input type="password" name="" id="" class="form-control" placeholder="**********">
                 </div>
-                <div class="mb-3 text-end">
+                <div class="mb-3 d-flex ">
+                    <input type="checkbox" class="input-checkbox" name="remember" id="remember"
+                        style="width:25px; height:25px">
+                    <label for="remember" class="fw-bold ps-2">Remember Me for next time login</label>
+                </div>
+                <div class="mb-3 text-end clear-both">
 
-                    <button class="btn btn-secondary btn-lg border-0  clear-both">sign in <i
+                    <a href="Dashboard.html" class="btn btn-secondary btn-lg border-0  clear-both">sign in <i
                             class="fa-solid fa-sign-in ms-3"></i>
-                    </button>
+                    </a>
 
                 </div>
             </form>
             <div class="text-center bg_light py-3">
-                <a href="" class="btn btn-md btn-primary border-0"> sign in with Google </a>
-                <a href="" class="btn btn-md btn-primary border-0"> sign in with FB </a>
+                <!-- <a href="" class="d-block btn btn-md btn-secondary" style="height:50px; line-height:35px"> Use
+                    Google
+                </a>
+                <br>
+                <a href="" class="d-d-block btn btn-md btn-secondary w-100" style="height:50px; line-height:35px"> Use
+                    Facebook
+                </a> -->
 
 
-                <hr>
+                <!-- <hr> -->
                 <a href="" class="btn btn-md text-danger"> Forgote Your Password ? <i
                         class="fa-solid fa-arrow-right ms-3"></i></a>
-                <a href="" class="btn btn-md btn-primary border-0"> Register </i></a>
+                <a href="register.html" class="btn btn-md btn-primary border-0"> Register </i></a>
             </div>
         </div>
     </div>

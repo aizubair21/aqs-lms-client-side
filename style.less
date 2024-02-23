@@ -420,19 +420,29 @@ body, * {
 
 #student_menu{
     .menu_item {
+        overflow: hidden;
+        overflow-y: scroll;
+        
+        &::-webkit-scrollbar{
+            display: none;
+            // width: 8px;
+        }
         height: 100vh;
         .std_menu_list{
+            text-align: center;
+
             .nav_item{
                 .nav_link{
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
-
+                   
                     .icon{
                         width: 20px;
                         height: 20px;
                         margin-right: 15px;
                         cursor: pointer;
+                        color: var(--lms-secondary);
                     }
                     &:hover:not(.active){
                         background-color: var(--lms-light);
@@ -442,6 +452,34 @@ body, * {
                 .active{
                     background-color: var(--lms-primary);
                     color: white;
+
+                    .icon{
+                        color: var(--lms-white);
+                    }
+                }
+            }
+
+            .special_access{
+                margin: 0 auto;
+                padding: 4px 20px;
+                .bg_gray;
+                color: var(--lms-black);
+                border-radius: 25px;
+                text-align: center;
+                display: inline-block;
+                margin: 5px 0px;
+                position: relative;
+                font-size: 12px;;
+                &::after{
+                    content: '';
+                    position: absolute;
+                    top:50%;
+                    left: 50%;
+                    width: 250px;
+                    height: .5px;
+                    transform: translate(-50%, -50%);
+                    background-color: var(--lms-gray);
+                    z-index: -1;
                 }
             }
         }    
@@ -662,6 +700,10 @@ body, * {
 
 // course learn page 
 #learning_page{
+
+    max-width:1400px;
+    margin:auto;
+    position: relative;
     .left{
         #video_playground iframe, video, #video{
             width: 100%;
@@ -745,6 +787,20 @@ body, * {
             overflow: hidden;
         }
     }   
+
+    .content_btn {
+        position: fixed;
+        bottom: 25px;
+        right: 25px;
+        z-index: 999;
+        width: 65px;
+        height: 65px;
+        .bg_dark;
+        color:white;
+    }
+    .active {
+        left: 0px!important;
+    }
 }
 
 //course learn page end
@@ -909,15 +965,16 @@ body, * {
     background-image: url("assets/pexels-photo-16150241-scaled.jpeg");
     background-position: center;
     background-size:cover;
-    background-blend-mode: soft-light;
+    // background-blend-mode: soft-light;
     .login-form{
         border-top: 10px solid var(--lms-secondary);
         max-width: 400px;
         .rounded;
         .lms_shadow-alt;
-        background: white;
+        // background: white;
         overflow: hidden;
-       
+        backdrop-filter: blur(25px);
+        .text_font;
     }
 }
 // login page end
