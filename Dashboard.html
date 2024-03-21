@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="responsive.css">
 
     <!-- bootstrap   -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap-5.0.2-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 </head>
@@ -225,7 +226,7 @@
                 <div class="menu_content">
 
                     <!-- content breadcrumbs -->
-                    <div class="breadcrumbs  mb-2 p-2">
+                    <div class="breadcrumbs bg-light  mb-2">
                         <div class="px-2 d-flex  justify-content-between align-items-center">
                             <!-- <img src="assets/icons8-align-right.png " class="asside_collaps-btn d-lg-none"> -->
                             <div class="asside_collaps-btn d-lg-none">
@@ -239,11 +240,10 @@
                     </div>
 
                     <!-- dashboard demon start -->
-                    <div class="dashboard px-3">
+                    <div class="dashboard px-2">
 
                         <!-- academy info start -->
-                        <section
-                            class="row justify-content-center align-items-center  my-3 p-3 rounded border_hover lms_shadow-alt">
+                        <section class="row justify-content-center align-items-center  my-3 py-3 px-2 rounded">
                             <h4>Academy Information</h4>
                             <hr />
                             <div class="col-md-6">
@@ -260,19 +260,18 @@
                         <!-- academy info end -->
 
                         <!-- short Information  -->
-                        <section class=" my-3 bg_light py-4">
-                            <div class="d-flex justify-content-center ">
+                        <section class=" my-3 bg_light py-4 overflow-scroll">
+                            <div class="d-inline-flex">
 
-                                <div class="overflow-hidden bg-light border_hover py-5 position-relative px-0 m-2 lms_shadow rounded shadow_hover text-center"
-                                    style="width:200px; height:200px">
+                                <div class=" overflow-hidden bg-light border_hover py-5 position-relative px-0 m-2 lms_shadow rounded shadow_hover text-center"
+                                    style="width:200px !important;; height:200px">
                                     <i class="fas fa-user position-absolute bottom-0 start-50 p-3 opacity-25"
                                         style="font-size:120px"></i>
                                     <div class="fs-1  m-0 fw-bold text_primary border-bottom">100</div>
                                     <div class="h4 my-2 text-uppercase">Student</div>
                                 </div>
 
-
-                                <div class="overflow-hidden bg-light border_hover py-5 position-relative px-0 m-2 lms_shadow rounded shadow_hover text-center"
+                                <div class=" overflow-hidden bg-light border_hover py-5 position-relative px-0 m-2 lms_shadow rounded shadow_hover text-center"
                                     style="width:200px; height:200px">
                                     <i class="fas fa-user position-absolute bottom-0 start-50 p-3 opacity-25"
                                         style="font-size:120px"></i>
@@ -280,8 +279,7 @@
                                     <div class="h4 my-2 text-uppercase">Instructor</div>
                                 </div>
 
-
-                                <div class="overflow-hidden bg-light border_hover py-5 position-relative px-0 m-2 lms_shadow rounded shadow_hover text-center"
+                                <div class=" overflow-hidden bg-light border_hover py-5 position-relative px-0 m-2 lms_shadow rounded shadow_hover text-center"
                                     style="width:200px; height:200px">
                                     <i class="fas fa-user position-absolute bottom-0 start-50 p-3 opacity-25"
                                         style="font-size:120px"></i>
@@ -289,8 +287,7 @@
                                     <div class="h4 my-2 text-uppercase">Student</div>
                                 </div>
 
-
-                                <div class="overflow-hidden bg-light border_hover py-5 position-relative px-0 m-2 lms_shadow rounded shadow_hover text-center"
+                                <div class=" overflow-hidden bg-light border_hover py-5 position-relative px-0 m-2 lms_shadow rounded shadow_hover text-center"
                                     style="width:200px; height:200px">
                                     <i class="fas fa-user position-absolute bottom-0 start-50 p-3 opacity-25"
                                         style="font-size:120px"></i>
@@ -303,7 +300,8 @@
                         <!-- short Information  -->
 
                         <!-- recent purches history  -->
-                        <section class="bg-white py-2 px-3 my-3 rounded border_primary border_hover shadow">
+                        <section
+                            class="bg-white py-2 px-3 my-3 rounded border_primary border_hover shadow overflow-scroll">
                             <div class="dashboard-header pb-3 h5  my-2 bg-white">
                                 Recent Purchase Request
                                 <br>
@@ -311,10 +309,10 @@
                                     1 more request
                                 </div>
                             </div>
-                            <div class="d-flex justify-content-between mb-2">
-                                <div class="bulk_action">
+                            <div class="row m-0 justify-content-between mb-2">
+                                <div class=" col-md-6 bulk_action">
                                     <div class="input-group">
-                                        <div class="input-group-text">Bulk Action :</div>
+                                        <div class="input-group-text ">Bulk Action :</div>
                                         <select name="Action" id="action" class="form-control form-select ">
                                             <option value="">Select Option</option>
                                             <option value="approveAll">Approve All</option>
@@ -326,19 +324,25 @@
                                         </select>
                                     </div>
                                 </div>
-                                <div class="search-div">
+                                <div class="search-div col-md-6 my-2 my-md-0">
                                     <input type="search" class="form-control form-search border_primary"
                                         placeholder="Search..." aria-label="Search">
                                 </div>
                             </div>
                             <hr>
-                            <div class="d-flex m-0">
-                                <button class="btn btn-sm btn-primary btn-md mx-1 border-0 px-4">All 25</button>
-                                <button class="btn btn-sm btn-info mx-1 px-4">Pending 25</button>
-                                <button class="btn btn-sm border mx-1 px-4">Approved 25</button>
-                                <button class="btn btn-sm border mx-1 px-4">Trash 5</button>
+
+                            <div class="d-flex m-0 overflow-scroll py-2">
+                                <button class="btn btn-sm btn-primary btn-md mx-1 border-0 px-4">All <span
+                                        class="d-none d-md-block">25</span></button>
+                                <button class="btn btn-sm border mx-1 px-4">Pending <span
+                                        class="d-none d-md-block">5</span></button>
+                                <button class="btn btn-sm border mx-1 px-4">Approved <span
+                                        class="d-none d-md-block">15</span></button>
+                                <button class="btn btn-sm border mx-1 px-4">Trash <span
+                                        class="d-none d-md-block">20</span></button>
                             </div>
-                            <table class="table table-hover ">
+
+                            <table class="table table-responsive">
                                 <thead>
                                     <tr>
                                         <th>
@@ -393,7 +397,7 @@
                     <!-- dashboard demon end -->
 
                     <!-- courses demo -->
-                    <div class="courses px-3">
+                    <div class="courses px-2">
 
                         <!-- running -->
                         <div class="bg-light course border_hover lms_shadow shadow_hover">
@@ -622,6 +626,7 @@
     </div>
 
     <!-- bootstrap  -->
+    <script src="assets/plugins/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
 
